@@ -69,7 +69,19 @@ public class SchemaCheck implements Runnable {
         for (Path testPath : getFilePaths()) {
             IdmUnitTest idmUnitTest = getTest(testPath);
 
-                        logWriter.println("\t" + String.join("\t" + System.lineSeparator(), missingAttributes));
+                logWriter.println("["  + idmUnitTest.getName() + "]");
+                idmUnitTest.getOperations().forEach(operation -> {
+                    logWriter.println("\t--[" + operation.getComment() + "]");
+                    if (null == operation.getData() || operation.getData().isEmpty()){
+                        logWriter.println("\t\t[WARNING] This operation has no data.");
+                        return;
+                    }
+                    Set<String> missingAttributes = ldapUtils.getMissingRequiredAttributeNames(operation);
+                    if (null != missingAttributes && !missingAttributes.isEmpty()) {
+                        String lineRunner = "\t\t[WARNING] [MISSING ATTRIBUTE] \"";
+                        logWriter.println(lineRunner + String.join("\"" + System.lineSeparator() + lineRunner, missingAttributes));
+                    }else {
+                        logWriter.println("\t\t[INFO] This operation is not missing any required attributes");
                     }
                 });
             }
