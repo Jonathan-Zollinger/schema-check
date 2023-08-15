@@ -153,6 +153,7 @@ public class SchemaCheck implements Runnable {
             testPaths = files
                     .filter(Files::isRegularFile)
                     .filter(path -> path.toString().endsWith(".json"))
+                    .filter(path -> !path.getFileName().toString().startsWith("manifest"))
                     .sorted(Comparator.reverseOrder())
                     .collect(Collectors.toList());
         } catch (IOException e) {
