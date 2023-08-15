@@ -1,0 +1,202 @@
+{
+    "name": "testInitialize",
+    "title": "Initialize",
+    "desc": "",
+    "columnWidths": {
+        "0": 185.94092,
+        "1": 94.91247,
+        "2": 101.91466,
+        "3": 89.46936,
+        "4": 75.46499,
+        "5": 139.25055,
+        "6": 98.79649,
+        "7": 483.91684,
+        "8": 313.53937,
+        "9": 313.53937,
+        "10": 300.30087,
+        "11": 150.13675,
+        "12": 115.91903,
+        "13": 198.3862,
+        "14": 64.0,
+        "15": 64.0,
+        "16": 64.0,
+        "17": 64.0,
+        "18": 64.0,
+        "19": 64.0,
+        "20": 64.0,
+        "21": 64.0,
+        "22": 64.0,
+        "23": 64.0,
+        "24": 64.0
+    },
+    "connectors": [
+        {
+            "name": "IDV",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "cn",
+                    "groupNum": 2
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 3
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 4
+                },
+                {
+                    "name": "userPassword",
+                    "groupNum": 5
+                },
+                {
+                    "name": "description",
+                    "groupNum": 6
+                }
+            ]
+        },
+        {
+            "name": "AD",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 3
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 4
+                },
+                {
+                    "name": "unicodePwd",
+                    "groupNum": 5
+                },
+                {
+                    "name": "description",
+                    "groupNum": 6
+                }
+            ]
+        }
+    ],
+    "operations": [
+        {
+            "comment": "CLEANUP",
+            "operation": "comment"
+        },
+        {
+            "comment": "Create test user in IDV",
+            "operation": "AddObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=testuser1,ou=users,o=example"
+                    ]
+                },
+                {
+                    "attribute": "objectClass",
+                    "value": [
+                        "User"
+                    ]
+                },
+                {
+                    "attribute": "cn",
+                    "value": [
+                        "testuser1"
+                    ]
+                },
+                {
+                    "attribute": "givenName",
+                    "value": [
+                        "Test"
+                    ]
+                },
+                {
+                    "attribute": "sn",
+                    "value": [
+                        "User1"
+                    ]
+                },
+                {
+                    "attribute": "userPassword",
+                    "value": [
+                        "Trivir1!"
+                    ]
+                },
+                {
+                    "attribute": "description",
+                    "value": [
+                        "Test User1"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate test user in AD",
+            "operation": "ValidateObject",
+            "target": "AD",
+            "waitInterval": "7000",
+            "retryCount": "6",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "CN=testuser1,OU=Users,DC=EXAMPLE,DC=ORG"
+                    ]
+                },
+                {
+                    "attribute": "objectClass",
+                    "value": [
+                        "User"
+                    ]
+                },
+                {
+                    "attribute": "givenName",
+                    "value": [
+                        "Test"
+                    ]
+                },
+                {
+                    "attribute": "sn",
+                    "value": [
+                        "User1"
+                    ]
+                },
+                {
+                    "attribute": "unicodePwd",
+                    "value": [
+                        "Trivir1!"
+                    ]
+                },
+                {
+                    "attribute": "description",
+                    "value": [
+                        "Test User1"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "name": "testCleanup",
+    "title": "Cleanup",
+    "desc": "",
+    "columnWidths": {
+        "0": 185.94092,
+        "1": 94.91247,
+        "2": 65.344635,
+        "3": 89.46936,
+        "4": 75.46499,
+        "5": 139.25055,
+        "6": 136.13239,
+        "7": 788.89496
+    },
+    "connectors": [
+        {
+            "name": "IDV",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                }
+            ]
+        }
+    ],
+    "operations": [
+        {
+            "comment": "CLEANUP",
+            "operation": "comment"
+        },
+        {
+            "comment": "Delete work user 1 from AD",
+            "operation": "DelObject",
+            "target": "AD",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "CN=TestUser1,OU=Users,DC=EXAMPLE,DC=ORG"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Delete work user 1 in IDV",
+            "operation": "DelObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=testuser1,ou=users,o=example"
+                    ]
+                }
+            ]
+        }
+    ]
+}

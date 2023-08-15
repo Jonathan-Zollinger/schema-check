@@ -1,0 +1,135 @@
+{
+    "name": "testConnections",
+    "title": "Test Connections",
+    "desc": "Use this test to validate the connection to each system.",
+    "columnWidths": {
+        "0": 245.07658,
+        "1": 108.91685,
+        "2": 113.566734,
+        "3": 87.91028,
+        "4": 89.46936,
+        "5": 105.03282,
+        "6": 105.03282,
+        "7": 444.22864,
+        "8": 263.73083,
+        "9": 203.82932,
+        "10": 148.57768,
+        "11": 67.66958,
+        "12": 91.794304,
+        "13": 113.566734,
+        "14": 112.035,
+        "15": 102.68052,
+        "16": 231.83806,
+        "17": 93.353386,
+        "190": 64.0,
+        "191": 64.0
+    },
+    "connectors": [
+        {
+            "name": "IDV",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "cn",
+                    "groupNum": 2
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 3
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 4
+                },
+                {
+                    "name": "userPassword",
+                    "groupNum": 5
+                },
+                {
+                    "name": "description",
+                    "groupNum": 6
+                }
+            ]
+        },
+        {
+            "name": "AD",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "cn",
+                    "groupNum": 2
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 3
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 4
+                },
+                {
+                    "name": "unicodePwd",
+                    "groupNum": 5
+                },
+                {
+                    "name": "description",
+                    "groupNum": 6
+                }
+            ]
+        }
+    ],
+    "operations": [
+        {
+            "comment": "Test the connection to each system. Look for something that is known  to be there.",
+            "operation": "comment"
+        },
+        {
+            "comment": "Validate base OU",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "o=services"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate base DC",
+            "operation": "AddObject",
+            "target": "AD",
+            "waitInterval": "7000",
+            "retryCount": "6",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "dc=com"
+                    ]
+                }
+            ]
+        }
+    ]
+}

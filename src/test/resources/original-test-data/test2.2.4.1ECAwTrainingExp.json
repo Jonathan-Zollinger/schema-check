@@ -1,0 +1,2507 @@
+{
+    "name": "test2.2.4.1ECAwTrainingExp",
+    "title": "2.2.4.1 EC Awareness Training Expires + WebAppNotification Testing",
+    "desc": "EUID: idmunitUKB70002231",
+    "columnWidths": {
+        "0": 310.3118,
+        "1": 173.46826,
+        "2": 80.99015,
+        "3": 96.635666,
+        "4": 96.635666,
+        "5": 103.20022,
+        "6": 112.80087,
+        "7": 399.80853,
+        "8": 193.54485,
+        "9": 157.13895,
+        "10": 108.69803,
+        "11": 179.84135,
+        "12": 70.15864,
+        "13": 89.87965,
+        "14": 121.17068,
+        "15": 169.31071,
+        "16": 191.71225,
+        "17": 119.52953,
+        "18": 141.30197,
+        "19": 210.31181,
+        "20": 157.57658,
+        "21": 113.42998,
+        "22": 193.65427,
+        "23": 177.5164,
+        "24": 209.81947,
+        "25": 209.81947,
+        "26": 129.07549,
+        "27": 141.30197,
+        "28": 141.30197,
+        "29": 157.57658,
+        "30": 225.95732,
+        "31": 193.65427,
+        "32": 177.5164,
+        "33": 177.5164,
+        "34": 96.77242,
+        "35": 193.65427,
+        "36": 225.95732,
+        "37": 225.95732,
+        "38": 314.1411,
+        "39": 157.57658,
+        "40": 157.57658,
+        "41": 222.04594,
+        "42": 225.95732,
+        "43": 228.11815,
+        "44": 209.81947,
+        "45": 209.81947,
+        "46": 201.12143,
+        "47": 201.12143,
+        "48": 265.7002,
+        "49": 184.95622,
+        "50": 193.65427,
+        "51": 325.0,
+        "52": 194.03719,
+        "53": 177.89934,
+        "54": 161.73413,
+        "55": 209.81947,
+        "56": 184.95622,
+        "57": 258.26038,
+        "58": 184.95622,
+        "59": 184.95622,
+        "60": 328.96606,
+        "61": 233.39714,
+        "62": 249.56235,
+        "63": 184.95622,
+        "64": 149.9453,
+        "65": 311.1324,
+        "66": 124.26148,
+        "67": 147.18271,
+        "68": 195.62363,
+        "69": 276.61377,
+        "70": 141.30197,
+        "71": 189.74287,
+        "72": 173.60503,
+        "73": 222.04594,
+        "74": 238.21115,
+        "75": 189.74287,
+        "76": 157.57658,
+        "77": 173.60503,
+        "78": 157.57658,
+        "79": 189.74287,
+        "80": 222.04594,
+        "81": 318.95514,
+        "82": 125.16411,
+        "83": 189.74287,
+        "84": 238.21115,
+        "85": 141.30197,
+        "86": 189.74287,
+        "87": 238.21115,
+        "88": 141.30197,
+        "89": 189.74287,
+        "90": 141.30197,
+        "91": 157.57658,
+        "92": 141.30197,
+        "93": 125.16411,
+        "94": 108.9989,
+        "95": 157.57658,
+        "96": 141.30197,
+        "97": 125.16411,
+        "98": 189.74287,
+        "99": 173.60503,
+        "100": 157.57658,
+        "101": 205.90808,
+        "102": 238.21115,
+        "103": 209.81947,
+        "104": 270.48685,
+        "105": 270.48685,
+        "106": 270.48685,
+        "107": 270.48685,
+        "108": 270.48685,
+        "109": 270.48685,
+        "110": 270.48685,
+        "111": 270.48685,
+        "112": 270.48685,
+        "113": 60.557983,
+        "114": 60.557983,
+        "115": 60.557983,
+        "116": 60.557983,
+        "117": 60.557983,
+        "118": 60.557983,
+        "119": 60.557983,
+        "120": 60.557983,
+        "121": 60.557983,
+        "122": 60.557983,
+        "123": 60.557983,
+        "124": 60.557983,
+        "125": 60.557983,
+        "126": 60.557983,
+        "127": 60.557983,
+        "128": 60.557983,
+        "129": 60.557983,
+        "130": 60.557983,
+        "131": 60.557983,
+        "132": 60.557983,
+        "133": 60.557983,
+        "134": 60.557983,
+        "135": 60.557983,
+        "136": 60.557983,
+        "137": 60.557983,
+        "138": 60.557983,
+        "139": 60.557983,
+        "140": 60.557983,
+        "141": 60.557983,
+        "142": 60.557983,
+        "143": 60.557983,
+        "144": 60.557983,
+        "145": 60.557983,
+        "146": 60.557983,
+        "147": 60.557983
+    },
+    "connectors": [
+        {
+            "name": "IDV",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "DirXml-Data",
+                    "groupNum": 2
+                },
+                {
+                    "name": "baeGCINumber",
+                    "groupNum": 3
+                },
+                {
+                    "name": "baeLegacyPayRollNumber",
+                    "groupNum": 4
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 5
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 6
+                },
+                {
+                    "name": "preferredName",
+                    "groupNum": 7
+                },
+                {
+                    "name": "baeDOB",
+                    "groupNum": 8
+                },
+                {
+                    "name": "baeSFEmailAddress",
+                    "groupNum": 9
+                },
+                {
+                    "name": "baeContractType",
+                    "groupNum": 10
+                },
+                {
+                    "name": "baeLegalEntityName",
+                    "groupNum": 11
+                },
+                {
+                    "name": "baeLegalEntityNamePri",
+                    "groupNum": 12
+                },
+                {
+                    "name": "baeLegalEntityNameSec",
+                    "groupNum": 13
+                },
+                {
+                    "name": "baeContractLength",
+                    "groupNum": 14
+                },
+                {
+                    "name": "baeCompanyStartDate",
+                    "groupNum": 15
+                },
+                {
+                    "name": "baeCompanyEndDate",
+                    "groupNum": 16
+                },
+                {
+                    "name": "physicalDeliveryOfficeName",
+                    "groupNum": 17
+                },
+                {
+                    "name": "baePhysicalDeliveryOfficeCode",
+                    "groupNum": 18
+                },
+                {
+                    "name": "baeFunctionName",
+                    "groupNum": 19
+                },
+                {
+                    "name": "baeFunctionCode",
+                    "groupNum": 20
+                },
+                {
+                    "name": "baeLegalEntityCode",
+                    "groupNum": 21
+                },
+                {
+                    "name": "baeLegalEntityCodePri",
+                    "groupNum": 22
+                },
+                {
+                    "name": "baeLegalEntityCodeSec",
+                    "groupNum": 23
+                },
+                {
+                    "name": "baeLengthSec",
+                    "groupNum": 24
+                },
+                {
+                    "name": "baeStartDateSec",
+                    "groupNum": 25
+                },
+                {
+                    "name": "baeEndDateSec",
+                    "groupNum": 26
+                },
+                {
+                    "name": "baeJobTitle",
+                    "groupNum": 27
+                },
+                {
+                    "name": "baeLastWorkingDay",
+                    "groupNum": 28
+                },
+                {
+                    "name": "baeDeptLevel1Description",
+                    "groupNum": 29
+                },
+                {
+                    "name": "baeDeptLevel1DescriptionPri",
+                    "groupNum": 30
+                },
+                {
+                    "name": "baeDeptLevel1DescriptionSec",
+                    "groupNum": 31
+                },
+                {
+                    "name": "manager",
+                    "groupNum": 32
+                },
+                {
+                    "name": "managerWorkforceID",
+                    "groupNum": 33
+                },
+                {
+                    "name": "baeManagerPri",
+                    "groupNum": 34
+                },
+                {
+                    "name": "baeManagerSec",
+                    "groupNum": 35
+                },
+                {
+                    "name": "baeIDVCreateDate",
+                    "groupNum": 36
+                },
+                {
+                    "name": "baeRegularEmployee",
+                    "groupNum": 37
+                },
+                {
+                    "name": "baeRegularEmployeeEvaluated",
+                    "groupNum": 38
+                },
+                {
+                    "name": "baeBusLevel1Name",
+                    "groupNum": 39
+                },
+                {
+                    "name": "baeBusLevel1NamePri",
+                    "groupNum": 40
+                },
+                {
+                    "name": "baeBusLevel1NameSec",
+                    "groupNum": 41
+                },
+                {
+                    "name": "baeBusLevel2Name",
+                    "groupNum": 42
+                },
+                {
+                    "name": "baeBusLevel2NamePri",
+                    "groupNum": 43
+                },
+                {
+                    "name": "baeBusLevel2NameSec",
+                    "groupNum": 44
+                },
+                {
+                    "name": "baeBusLevel3Name",
+                    "groupNum": 45
+                },
+                {
+                    "name": "baeBusLevel3NamePri",
+                    "groupNum": 46
+                },
+                {
+                    "name": "baeBusLevel3NameSec",
+                    "groupNum": 47
+                },
+                {
+                    "name": "baeBusLevel1Code",
+                    "groupNum": 48
+                },
+                {
+                    "name": "baeBusLevel1CodePri",
+                    "groupNum": 49
+                },
+                {
+                    "name": "baeBusLevel1CodeSec",
+                    "groupNum": 50
+                },
+                {
+                    "name": "baeBusLevel2Code",
+                    "groupNum": 51
+                },
+                {
+                    "name": "baeBusLevel2CodePri",
+                    "groupNum": 52
+                },
+                {
+                    "name": "baeBusLevel2CodeSec",
+                    "groupNum": 53
+                },
+                {
+                    "name": "baeBusLevel3Code",
+                    "groupNum": 54
+                },
+                {
+                    "name": "baeBusLevel3CodePri",
+                    "groupNum": 55
+                },
+                {
+                    "name": "baeBusLevel3CodeSec",
+                    "groupNum": 56
+                },
+                {
+                    "name": "baeDeptCode",
+                    "groupNum": 57
+                },
+                {
+                    "name": "baeDeptCodePri",
+                    "groupNum": 58
+                },
+                {
+                    "name": "baeDeptCodeSec",
+                    "groupNum": 59
+                },
+                {
+                    "name": "baeDeptLevel1Code",
+                    "groupNum": 60
+                },
+                {
+                    "name": "baeDeptLevel1CodePri",
+                    "groupNum": 61
+                },
+                {
+                    "name": "baeDeptLevel1CodeSec",
+                    "groupNum": 62
+                },
+                {
+                    "name": "baeDeptLevel2Code",
+                    "groupNum": 63
+                },
+                {
+                    "name": "baeDeptLevel2CodePri",
+                    "groupNum": 64
+                },
+                {
+                    "name": "baeDeptLevel2CodeSec",
+                    "groupNum": 65
+                },
+                {
+                    "name": "baeDeptLevel2Description",
+                    "groupNum": 66
+                },
+                {
+                    "name": "baeDeptLevel2DescriptionPri",
+                    "groupNum": 67
+                },
+                {
+                    "name": "baeDeptLevel2DescriptionSec",
+                    "groupNum": 68
+                },
+                {
+                    "name": "baeDeptLevel3Code",
+                    "groupNum": 69
+                },
+                {
+                    "name": "baeDeptLevel3CodePri",
+                    "groupNum": 70
+                },
+                {
+                    "name": "baeDeptLevel3CodeSec",
+                    "groupNum": 71
+                },
+                {
+                    "name": "baeDeptLevel3Description",
+                    "groupNum": 72
+                },
+                {
+                    "name": "baeDeptLevel3DescriptionPri",
+                    "groupNum": 73
+                },
+                {
+                    "name": "baeDeptLevel3DescriptionSec",
+                    "groupNum": 74
+                },
+                {
+                    "name": "baeDeptName",
+                    "groupNum": 75
+                },
+                {
+                    "name": "baeDeptNamePri",
+                    "groupNum": 76
+                },
+                {
+                    "name": "baeDeptNameSec",
+                    "groupNum": 77
+                },
+                {
+                    "name": "baeEnterpriseCode",
+                    "groupNum": 78
+                },
+                {
+                    "name": "baeEnterpriseCodePri",
+                    "groupNum": 79
+                },
+                {
+                    "name": "baeEnterpriseCodeSec",
+                    "groupNum": 80
+                },
+                {
+                    "name": "baeEnterpriseName",
+                    "groupNum": 81
+                },
+                {
+                    "name": "baeEnterpriseNamePri",
+                    "groupNum": 82
+                },
+                {
+                    "name": "baeEnterpriseNameSec",
+                    "groupNum": 83
+                },
+                {
+                    "name": "baeGroupCode",
+                    "groupNum": 84
+                },
+                {
+                    "name": "baeGroupCodePri",
+                    "groupNum": 85
+                },
+                {
+                    "name": "baeGroupCodeSec",
+                    "groupNum": 86
+                },
+                {
+                    "name": "baeGroupName",
+                    "groupNum": 87
+                },
+                {
+                    "name": "baeGroupNamePri",
+                    "groupNum": 88
+                },
+                {
+                    "name": "baeGroupNameSec",
+                    "groupNum": 89
+                },
+                {
+                    "name": "baeLegalEntityCode",
+                    "groupNum": 90
+                },
+                {
+                    "name": "baeLegalEntityCodePri",
+                    "groupNum": 91
+                },
+                {
+                    "name": "baeLegalEntityCodeSec",
+                    "groupNum": 92
+                },
+                {
+                    "name": "baeLegalEntityCountry",
+                    "groupNum": 93
+                },
+                {
+                    "name": "baeLegalEntityCountryPri",
+                    "groupNum": 94
+                },
+                {
+                    "name": "baeLegalEntityCountrySec",
+                    "groupNum": 95
+                },
+                {
+                    "name": "baeLevelOfECTraining",
+                    "groupNum": 96
+                },
+                {
+                    "name": "baeTrainingLastCompleted",
+                    "groupNum": 97
+                },
+                {
+                    "name": "baeTrainingAwarenessCompleted",
+                    "groupNum": 98
+                },
+                {
+                    "name": "baeTrainingEnhancedCompleted",
+                    "groupNum": 99
+                },
+                {
+                    "name": "baeIDMActivity",
+                    "groupNum": 100
+                },
+                {
+                    "name": "baeIsUserComplete",
+                    "groupNum": 101
+                },
+                {
+                    "name": "DirXML-Associations",
+                    "groupNum": 102
+                },
+                {
+                    "name": "baeTargetObject",
+                    "groupNum": 103
+                },
+                {
+                    "name": "baeAttributeChangeInfo",
+                    "groupNum": 104
+                }
+            ]
+        },
+        {
+            "name": "GL-AD",
+            "attributes": [
+                {
+                    "name": "dn",
+                    "groupNum": 0
+                },
+                {
+                    "name": "objectClass",
+                    "groupNum": 1
+                },
+                {
+                    "name": "employeeID",
+                    "groupNum": 3
+                },
+                {
+                    "name": "employeeNumber",
+                    "groupNum": 4
+                },
+                {
+                    "name": "sn",
+                    "groupNum": 5
+                },
+                {
+                    "name": "givenName",
+                    "groupNum": 6
+                },
+                {
+                    "name": "employeeType",
+                    "groupNum": 10
+                }
+            ]
+        },
+        {
+            "name": "SFXMLRemote",
+            "attributes": [
+                {
+                    "name": "root-element",
+                    "groupNum": 0
+                },
+                {
+                    "name": "record-element",
+                    "groupNum": 1
+                },
+                {
+                    "name": "GCI",
+                    "groupNum": 3
+                },
+                {
+                    "name": "Employee_Number",
+                    "groupNum": 4
+                },
+                {
+                    "name": "Surname",
+                    "groupNum": 5
+                },
+                {
+                    "name": "First_Name",
+                    "groupNum": 6
+                },
+                {
+                    "name": "Preferred_Name",
+                    "groupNum": 7
+                },
+                {
+                    "name": "Employee_Date_Of_Birth",
+                    "groupNum": 8
+                },
+                {
+                    "name": "Email",
+                    "groupNum": 9
+                },
+                {
+                    "name": "Contract_Type",
+                    "groupNum": 10
+                },
+                {
+                    "name": "Legal_Entity_Name",
+                    "groupNum": 12
+                },
+                {
+                    "name": "SECONDMENT_Legal_Entity_Name",
+                    "groupNum": 13
+                },
+                {
+                    "name": "Company_Start_Date",
+                    "groupNum": 15
+                },
+                {
+                    "name": "Employment_End_Date",
+                    "groupNum": 16
+                },
+                {
+                    "name": "Place_Of_Work",
+                    "groupNum": 17
+                },
+                {
+                    "name": "Place_Of_Work_Code",
+                    "groupNum": 18
+                },
+                {
+                    "name": "Function_Name",
+                    "groupNum": 19
+                },
+                {
+                    "name": "Function_Code",
+                    "groupNum": 20
+                },
+                {
+                    "name": "Legal_Entity_Code",
+                    "groupNum": 22
+                },
+                {
+                    "name": "SECONDMENT_Legal_Entity_Code",
+                    "groupNum": 23
+                },
+                {
+                    "name": "Secondment_Start_Date",
+                    "groupNum": 25
+                },
+                {
+                    "name": "Secondment_End_Date",
+                    "groupNum": 26
+                },
+                {
+                    "name": "Job_Title",
+                    "groupNum": 27
+                },
+                {
+                    "name": "Last_Day_At_Work",
+                    "groupNum": 28
+                },
+                {
+                    "name": "Department_Level_1_Description",
+                    "groupNum": 30
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_1_Description",
+                    "groupNum": 31
+                },
+                {
+                    "name": "Line_Manager_GCI",
+                    "groupNum": 34
+                },
+                {
+                    "name": "SECONDMENT_Line_Manager_GCI",
+                    "groupNum": 35
+                },
+                {
+                    "name": "Business_Level_1_Name",
+                    "groupNum": 40
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_1_Name",
+                    "groupNum": 41
+                },
+                {
+                    "name": "Business_Level_2_Name",
+                    "groupNum": 43
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_2_Name",
+                    "groupNum": 44
+                },
+                {
+                    "name": "Business_Level_3_Name",
+                    "groupNum": 46
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_3_Name",
+                    "groupNum": 47
+                },
+                {
+                    "name": "Business_Level_1_Code",
+                    "groupNum": 49
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_1_Code",
+                    "groupNum": 50
+                },
+                {
+                    "name": "Business_Level_2_Code",
+                    "groupNum": 52
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_2_Code",
+                    "groupNum": 53
+                },
+                {
+                    "name": "Business_Level_3_Code",
+                    "groupNum": 55
+                },
+                {
+                    "name": "SECONDMENT_Business_Level_3_Code",
+                    "groupNum": 56
+                },
+                {
+                    "name": "Department_Code",
+                    "groupNum": 58
+                },
+                {
+                    "name": "SECONDMENT_Department_Code",
+                    "groupNum": 59
+                },
+                {
+                    "name": "Department_Level_1_Code",
+                    "groupNum": 61
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_1_Code",
+                    "groupNum": 62
+                },
+                {
+                    "name": "Department_Level_2_Code",
+                    "groupNum": 64
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_2_Code",
+                    "groupNum": 65
+                },
+                {
+                    "name": "Department_Level_2_Description",
+                    "groupNum": 67
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_2_Description",
+                    "groupNum": 68
+                },
+                {
+                    "name": "Department_Level_3_Code",
+                    "groupNum": 70
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_3_Code",
+                    "groupNum": 71
+                },
+                {
+                    "name": "Department_Level_3_Description",
+                    "groupNum": 73
+                },
+                {
+                    "name": "SECONDMENT_Department_Level_3_Description",
+                    "groupNum": 74
+                },
+                {
+                    "name": "Department_Name",
+                    "groupNum": 76
+                },
+                {
+                    "name": "SECONDMENT_Department_Name",
+                    "groupNum": 77
+                },
+                {
+                    "name": "Enterprise_Code",
+                    "groupNum": 79
+                },
+                {
+                    "name": "SECONDMENT_Enterprise_Code",
+                    "groupNum": 80
+                },
+                {
+                    "name": "Enterprise_Name",
+                    "groupNum": 82
+                },
+                {
+                    "name": "SECONDMENT_Enterprise_Name",
+                    "groupNum": 83
+                },
+                {
+                    "name": "Group_Code",
+                    "groupNum": 85
+                },
+                {
+                    "name": "SECONDMENT_Group_Code",
+                    "groupNum": 86
+                },
+                {
+                    "name": "Group_Name",
+                    "groupNum": 88
+                },
+                {
+                    "name": "SECONDMENT_Group_Name",
+                    "groupNum": 89
+                },
+                {
+                    "name": "Legal_Entity_Code",
+                    "groupNum": 91
+                },
+                {
+                    "name": "SECONDMENT_Legal_Entity_Code",
+                    "groupNum": 92
+                },
+                {
+                    "name": "Legal_Entity_Country",
+                    "groupNum": 94
+                },
+                {
+                    "name": "SECONDMENT_Legal_Entity_Country",
+                    "groupNum": 95
+                },
+                {
+                    "name": "EC_Awareness_Training_Last_Completed",
+                    "groupNum": 98
+                },
+                {
+                    "name": "EC_Enhanced_Training_Last_Completed",
+                    "groupNum": 99
+                }
+            ]
+        }
+    ],
+    "operations": [
+        {
+            "comment": "Pretest & Cleanup",
+            "operation": "comment"
+        },
+        {
+            "comment": "Delete Test User",
+            "operation": "DeleteObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate Test User DNE",
+            "operation": "ValidateObjectDoesNotExist",
+            "target": "IDV",
+            "waitInterval": "1000",
+            "retryCount": "10",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Delete the WebApp notifications",
+            "operation": "DeleteObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "(&(objectClass=baeWebAppNotification)(baeTargetObject=cn=idmunitUKB70002231,ou=Users,o=BAES)),base=ou=Notifications,o=BAES"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Change the EUID to have a deterministic test.",
+            "operation": "ReplaceAttr",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "%EUID_COUNTERDN_LDAP%"
+                    ]
+                },
+                {
+                    "attribute": "DirXml-Data",
+                    "value": [
+                        "<euid>70002231</euid>"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "PRETEST: USER ADD",
+            "operation": "comment"
+        },
+        {
+            "comment": "Add the user in IDV",
+            "operation": "addObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "objectClass",
+                    "value": [
+                        "User!!baePerson!!DirXML-ApplicationAttrs"
+                    ]
+                },
+                {
+                    "attribute": "baeGCINumber",
+                    "value": [
+                        "8765432125"
+                    ]
+                },
+                {
+                    "attribute": "baeLegacyPayRollNumber",
+                    "value": [
+                        "998877665125"
+                    ]
+                },
+                {
+                    "attribute": "sn",
+                    "value": [
+                        "White2231"
+                    ]
+                },
+                {
+                    "attribute": "givenName",
+                    "value": [
+                        "Thomas"
+                    ]
+                },
+                {
+                    "attribute": "preferredName",
+                    "value": [
+                        "Tom"
+                    ]
+                },
+                {
+                    "attribute": "baeDOB",
+                    "value": [
+                        "2003-02-01"
+                    ]
+                },
+                {
+                    "attribute": "baeSFEmailAddress",
+                    "value": [
+                        "TomWhite2231@nowhere.com"
+                    ]
+                },
+                {
+                    "attribute": "baeContractType",
+                    "value": [
+                        "Contingent Worker"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityName",
+                    "value": [
+                        "ArmySec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityNamePri",
+                    "value": [
+                        "ArmyPrimary"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityNameSec",
+                    "value": [
+                        "ArmySec"
+                    ]
+                },
+                {
+                    "attribute": "baeContractLength",
+                    "value": [
+                        "6573"
+                    ]
+                },
+                {
+                    "attribute": "baeCompanyStartDate",
+                    "value": [
+                        "2001-01-01"
+                    ]
+                },
+                {
+                    "attribute": "baeCompanyEndDate",
+                    "value": [
+                        "2018-12-31"
+                    ]
+                },
+                {
+                    "attribute": "physicalDeliveryOfficeName",
+                    "value": [
+                        "Hillend"
+                    ]
+                },
+                {
+                    "attribute": "baePhysicalDeliveryOfficeCode",
+                    "value": [
+                        "1234"
+                    ]
+                },
+                {
+                    "attribute": "baeFunctionName",
+                    "value": [
+                        "SFFunctionName"
+                    ]
+                },
+                {
+                    "attribute": "baeFunctionCode",
+                    "value": [
+                        "SFFunctionCode"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCode",
+                    "value": [
+                        "baeLegalEntityCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCodePri",
+                    "value": [
+                        "baeLegalEntityCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCodeSec",
+                    "value": [
+                        "baeLegalEntityCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeStartDateSec",
+                    "value": [
+                        "2017-01-01"
+                    ]
+                },
+                {
+                    "attribute": "baeEndDateSec",
+                    "value": [
+                        "2030-12-31"
+                    ]
+                },
+                {
+                    "attribute": "baeLastWorkingDay",
+                    "value": [
+                        "9999-12-31"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1Description",
+                    "value": [
+                        "deptlevel1Sec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1DescriptionPri",
+                    "value": [
+                        "deptlevel1Pri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1DescriptionSec",
+                    "value": [
+                        "deptlevel1Sec"
+                    ]
+                },
+                {
+                    "attribute": "manager",
+                    "value": [
+                        "cn=idmunitUKB90012346,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "managerWorkforceID",
+                    "value": [
+                        "90012346"
+                    ]
+                },
+                {
+                    "attribute": "baeManagerPri",
+                    "value": [
+                        "90012345"
+                    ]
+                },
+                {
+                    "attribute": "baeManagerSec",
+                    "value": [
+                        "90012346"
+                    ]
+                },
+                {
+                    "attribute": "baeIDVCreateDate",
+                    "value": [
+                        "%TODAY%.+"
+                    ]
+                },
+                {
+                    "attribute": "baeRegularEmployee",
+                    "value": [
+                        "FALSE"
+                    ]
+                },
+                {
+                    "attribute": "baeRegularEmployeeEvaluated",
+                    "value": [
+                        "FALSE"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1Name",
+                    "value": [
+                        "baeBusLevel1NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1NamePri",
+                    "value": [
+                        "baeBusLevel1NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1NameSec",
+                    "value": [
+                        "baeBusLevel1NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2Name",
+                    "value": [
+                        "baeBusLevel2NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2NamePri",
+                    "value": [
+                        "baeBusLevel2NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2NameSec",
+                    "value": [
+                        "baeBusLevel2NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3Name",
+                    "value": [
+                        "baeBusLevel3NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3NamePri",
+                    "value": [
+                        "baeBusLevel3NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3NameSec",
+                    "value": [
+                        "baeBusLevel3NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1Code",
+                    "value": [
+                        "baeBusLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1CodePri",
+                    "value": [
+                        "baeBusLevel1CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1CodeSec",
+                    "value": [
+                        "baeBusLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2Code",
+                    "value": [
+                        "baeBusLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2CodePri",
+                    "value": [
+                        "baeBusLevel2CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2CodeSec",
+                    "value": [
+                        "baeBusLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3Code",
+                    "value": [
+                        "baeBusLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3CodePri",
+                    "value": [
+                        "baeBusLevel3CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3CodeSec",
+                    "value": [
+                        "baeBusLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCode",
+                    "value": [
+                        "baeDeptCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCodePri",
+                    "value": [
+                        "baeDeptCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCodeSec",
+                    "value": [
+                        "baeDeptCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1Code",
+                    "value": [
+                        "baeDeptLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1CodePri",
+                    "value": [
+                        "baeDeptLevel1CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1CodeSec",
+                    "value": [
+                        "baeDeptLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2Code",
+                    "value": [
+                        "baeDeptLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2CodePri",
+                    "value": [
+                        "baeDeptLevel2CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2CodeSec",
+                    "value": [
+                        "baeDeptLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2Description",
+                    "value": [
+                        "baeDeptLevel2DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2DescriptionPri",
+                    "value": [
+                        "baeDeptLevel2DescriptionPri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2DescriptionSec",
+                    "value": [
+                        "baeDeptLevel2DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3Code",
+                    "value": [
+                        "baeDeptLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3CodePri",
+                    "value": [
+                        "baeDeptLevel3CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3CodeSec",
+                    "value": [
+                        "baeDeptLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3Description",
+                    "value": [
+                        "baeDeptLevel3DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3DescriptionPri",
+                    "value": [
+                        "baeDeptLevel3DescriptionPri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3DescriptionSec",
+                    "value": [
+                        "baeDeptLevel3DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptName",
+                    "value": [
+                        "baeDeptNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptNamePri",
+                    "value": [
+                        "baeDeptNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptNameSec",
+                    "value": [
+                        "baeDeptNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCode",
+                    "value": [
+                        "baeEnterpriseCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCodePri",
+                    "value": [
+                        "baeEnterpriseCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCodeSec",
+                    "value": [
+                        "baeEnterpriseCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseName",
+                    "value": [
+                        "baeEnterpriseNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseNamePri",
+                    "value": [
+                        "baeEnterpriseNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseNameSec",
+                    "value": [
+                        "baeEnterpriseNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCode",
+                    "value": [
+                        "baeGroupCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCodePri",
+                    "value": [
+                        "baeGroupCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCodeSec",
+                    "value": [
+                        "baeGroupCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupName",
+                    "value": [
+                        "baeGroupNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupNamePri",
+                    "value": [
+                        "baeGroupNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupNameSec",
+                    "value": [
+                        "baeGroupNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountry",
+                    "value": [
+                        "baeLegalEntityCountrySec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountryPri",
+                    "value": [
+                        "baeLegalEntityCountryPri"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountrySec",
+                    "value": [
+                        "baeLegalEntityCountrySec"
+                    ]
+                },
+                {
+                    "attribute": "baeIDMActivity",
+                    "value": [
+                        ".+Placing new object.+"
+                    ]
+                },
+                {
+                    "attribute": "baeIsUserComplete",
+                    "value": [
+                        "FALSE"
+                    ]
+                },
+                {
+                    "attribute": "DirXML-Associations",
+                    "value": [
+                        "cn=GL-AD-Driver,cn=Driver SET,ou=IDM,o=servIces#1#idmunitUKB70002231-FakeAssocForCompleteFlag!!cn=SuccessFactors-Driver,cn=Driver SET,ou=IDM,o=servIces#1#idmunitUKB70002231-FakeAssocForCompleteFlag!!cn=VRS-Driver,cn=Driver SET,ou=IDM,o=servIces#1#idmunitUKB70002231-FakeAssocForCompleteFlag"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate the user is created in IDV",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "2000",
+            "retryCount": "16",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "objectClass",
+                    "value": [
+                        "User|inetOrgPerson"
+                    ]
+                },
+                {
+                    "attribute": "baeGCINumber",
+                    "value": [
+                        "8765432125"
+                    ]
+                },
+                {
+                    "attribute": "baeLegacyPayRollNumber",
+                    "value": [
+                        "998877665125"
+                    ]
+                },
+                {
+                    "attribute": "sn",
+                    "value": [
+                        "White2231"
+                    ]
+                },
+                {
+                    "attribute": "givenName",
+                    "value": [
+                        "Thomas"
+                    ]
+                },
+                {
+                    "attribute": "preferredName",
+                    "value": [
+                        "Tom"
+                    ]
+                },
+                {
+                    "attribute": "baeDOB",
+                    "value": [
+                        "2003-02-01"
+                    ]
+                },
+                {
+                    "attribute": "baeSFEmailAddress",
+                    "value": [
+                        "TomWhite2231@nowhere.com"
+                    ]
+                },
+                {
+                    "attribute": "baeContractType",
+                    "value": [
+                        "Contingent Worker"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityName",
+                    "value": [
+                        "ArmySec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityNamePri",
+                    "value": [
+                        "ArmyPrimary"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityNameSec",
+                    "value": [
+                        "ArmySec"
+                    ]
+                },
+                {
+                    "attribute": "baeContractLength",
+                    "value": [
+                        "6573"
+                    ]
+                },
+                {
+                    "attribute": "baeCompanyStartDate",
+                    "value": [
+                        "2001-01-01"
+                    ]
+                },
+                {
+                    "attribute": "baeCompanyEndDate",
+                    "value": [
+                        "2018-12-31"
+                    ]
+                },
+                {
+                    "attribute": "physicalDeliveryOfficeName",
+                    "value": [
+                        "Hillend"
+                    ]
+                },
+                {
+                    "attribute": "baePhysicalDeliveryOfficeCode",
+                    "value": [
+                        "1234"
+                    ]
+                },
+                {
+                    "attribute": "baeFunctionName",
+                    "value": [
+                        "SFFunctionName"
+                    ]
+                },
+                {
+                    "attribute": "baeFunctionCode",
+                    "value": [
+                        "SFFunctionCode"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCode",
+                    "value": [
+                        "baeLegalEntityCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCodePri",
+                    "value": [
+                        "baeLegalEntityCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCodeSec",
+                    "value": [
+                        "baeLegalEntityCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeLengthSec",
+                    "value": [
+                        "5112"
+                    ]
+                },
+                {
+                    "attribute": "baeStartDateSec",
+                    "value": [
+                        "2017-01-01"
+                    ]
+                },
+                {
+                    "attribute": "baeEndDateSec",
+                    "value": [
+                        "2030-12-31"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1Description",
+                    "value": [
+                        "deptlevel1Sec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1DescriptionPri",
+                    "value": [
+                        "deptlevel1Pri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1DescriptionSec",
+                    "value": [
+                        "deptlevel1Sec"
+                    ]
+                },
+                {
+                    "attribute": "manager",
+                    "value": [
+                        "(?i)cn=idmunitUKB90012346,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "managerWorkforceID",
+                    "value": [
+                        "90012346"
+                    ]
+                },
+                {
+                    "attribute": "baeManagerPri",
+                    "value": [
+                        "90012345"
+                    ]
+                },
+                {
+                    "attribute": "baeManagerSec",
+                    "value": [
+                        "90012346"
+                    ]
+                },
+                {
+                    "attribute": "baeIDVCreateDate",
+                    "value": [
+                        "%TODAY%.+"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1Name",
+                    "value": [
+                        "baeBusLevel1NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1NamePri",
+                    "value": [
+                        "baeBusLevel1NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1NameSec",
+                    "value": [
+                        "baeBusLevel1NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2Name",
+                    "value": [
+                        "baeBusLevel2NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2NamePri",
+                    "value": [
+                        "baeBusLevel2NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2NameSec",
+                    "value": [
+                        "baeBusLevel2NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3Name",
+                    "value": [
+                        "baeBusLevel3NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3NamePri",
+                    "value": [
+                        "baeBusLevel3NamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3NameSec",
+                    "value": [
+                        "baeBusLevel3NameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1Code",
+                    "value": [
+                        "baeBusLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1CodePri",
+                    "value": [
+                        "baeBusLevel1CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel1CodeSec",
+                    "value": [
+                        "baeBusLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2Code",
+                    "value": [
+                        "baeBusLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2CodePri",
+                    "value": [
+                        "baeBusLevel2CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel2CodeSec",
+                    "value": [
+                        "baeBusLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3Code",
+                    "value": [
+                        "baeBusLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3CodePri",
+                    "value": [
+                        "baeBusLevel3CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeBusLevel3CodeSec",
+                    "value": [
+                        "baeBusLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCode",
+                    "value": [
+                        "baeDeptCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCodePri",
+                    "value": [
+                        "baeDeptCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptCodeSec",
+                    "value": [
+                        "baeDeptCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1Code",
+                    "value": [
+                        "baeDeptLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1CodePri",
+                    "value": [
+                        "baeDeptLevel1CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel1CodeSec",
+                    "value": [
+                        "baeDeptLevel1CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2Code",
+                    "value": [
+                        "baeDeptLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2CodePri",
+                    "value": [
+                        "baeDeptLevel2CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2CodeSec",
+                    "value": [
+                        "baeDeptLevel2CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2Description",
+                    "value": [
+                        "baeDeptLevel2DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2DescriptionPri",
+                    "value": [
+                        "baeDeptLevel2DescriptionPri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel2DescriptionSec",
+                    "value": [
+                        "baeDeptLevel2DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3Code",
+                    "value": [
+                        "baeDeptLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3CodePri",
+                    "value": [
+                        "baeDeptLevel3CodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3CodeSec",
+                    "value": [
+                        "baeDeptLevel3CodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3Description",
+                    "value": [
+                        "baeDeptLevel3DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3DescriptionPri",
+                    "value": [
+                        "baeDeptLevel3DescriptionPri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptLevel3DescriptionSec",
+                    "value": [
+                        "baeDeptLevel3DescriptionSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptName",
+                    "value": [
+                        "baeDeptNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptNamePri",
+                    "value": [
+                        "baeDeptNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeDeptNameSec",
+                    "value": [
+                        "baeDeptNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCode",
+                    "value": [
+                        "baeEnterpriseCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCodePri",
+                    "value": [
+                        "baeEnterpriseCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseCodeSec",
+                    "value": [
+                        "baeEnterpriseCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseName",
+                    "value": [
+                        "baeEnterpriseNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseNamePri",
+                    "value": [
+                        "baeEnterpriseNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeEnterpriseNameSec",
+                    "value": [
+                        "baeEnterpriseNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCode",
+                    "value": [
+                        "baeGroupCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCodePri",
+                    "value": [
+                        "baeGroupCodePri"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupCodeSec",
+                    "value": [
+                        "baeGroupCodeSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupName",
+                    "value": [
+                        "baeGroupNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupNamePri",
+                    "value": [
+                        "baeGroupNamePri"
+                    ]
+                },
+                {
+                    "attribute": "baeGroupNameSec",
+                    "value": [
+                        "baeGroupNameSec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountry",
+                    "value": [
+                        "baeLegalEntityCountrySec"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountryPri",
+                    "value": [
+                        "baeLegalEntityCountryPri"
+                    ]
+                },
+                {
+                    "attribute": "baeLegalEntityCountrySec",
+                    "value": [
+                        "baeLegalEntityCountrySec"
+                    ]
+                },
+                {
+                    "attribute": "baeIDMActivity",
+                    "value": [
+                        ".+Placing new object.+"
+                    ]
+                },
+                {
+                    "attribute": "baeIsUserComplete",
+                    "value": [
+                        "TRUE"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeLevelOfECTraining",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingLastCompleted",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingAwarenessCompleted",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingEnhancedCompleted",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Disable the Service Driver so we can setup each precondition.",
+            "operation": "ReplaceAttr",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "DirXML-Associations",
+                    "value": [
+                        "cn=Service-Driver,cn=Driver SET,ou=IDM,o=servIces#0#Disable-Re-Association-Code-For-IdMUnit-Testing"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate the IDV mod (Having odd timing tests right no so being very thorough).",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "DirXML-Associations",
+                    "value": [
+                        "(?i)cn=Service-Driver,cn=Driver SET,ou=IDM,o=servIces#0#Disable-Re-Association-Code-For-IdMUnit-Testing"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Set the dates for the date calculation testing.",
+            "operation": "ReplaceAttr",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeLevelOfECTraining",
+                    "value": [
+                        "Awareness"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingLastCompleted",
+                    "value": [
+                        "%YESTERDAY%"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingAwarenessCompleted",
+                    "value": [
+                        "%YESTERDAY%"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate the the user is updated appropriately.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeLevelOfECTraining",
+                    "value": [
+                        "Awareness"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingLastCompleted",
+                    "value": [
+                        "%YESTERDAY%"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingAwarenessCompleted",
+                    "value": [
+                        "%YESTERDAY%"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Re-enable the Service Driver to ready the users for the IDM Job",
+            "operation": "RemoveAttr",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "DirXML-Associations",
+                    "value": [
+                        "cn=Service-Driver,cn=Driver SET,ou=IDM,o=servIces#0#"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "TEST: USER Modify",
+            "operation": "comment"
+        },
+        {
+            "comment": "Set the date attributes for testing",
+            "operation": "ReplaceAttr",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingAwarenessCompleted",
+                    "value": [
+                        "%OVER_3_YEARS_AGO%"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate the correct updates are made",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "2000",
+            "retryCount": "12",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingAwarenessCompleted",
+                    "value": [
+                        "%OVER_3_YEARS_AGO%"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "2000",
+            "retryCount": "12",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingLastCompleted",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeLevelOfECTraining",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate attribute is empty.",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "TRUE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeTrainingEnhancedCompleted",
+                    "value": [
+                        ".+"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Validate the WebApp notification",
+            "operation": "ValidateObject",
+            "target": "IDV",
+            "waitInterval": "2000",
+            "retryCount": "12",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "(&(objectClass=baeWebAppNotification)(baeTargetObject=cn=idmunitUKB70002231,ou=Users,o=BAES)),base=ou=Notifications,o=BAES"
+                    ]
+                },
+                {
+                    "attribute": "baeAttributeChangeInfo",
+                    "value": [
+                        "baeLevelOfECTraining~~~~!! baeTrainingLastCompleted~~~~"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Cleanup",
+            "operation": "comment"
+        },
+        {
+            "comment": "Delete Test User",
+            "operation": "DeleteObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "cn=idmunitUKB70002231,ou=Users,o=BAES"
+                    ]
+                }
+            ]
+        },
+        {
+            "comment": "Delete the WebApp notifications",
+            "operation": "DeleteObject",
+            "target": "IDV",
+            "waitInterval": "0",
+            "retryCount": "0",
+            "disabled": "FALSE",
+            "failureExpected": "FALSE",
+            "data": [
+                {
+                    "attribute": "dn",
+                    "value": [
+                        "(&(objectClass=baeWebAppNotification)(baeTargetObject=cn=idmunitUKB70002231,ou=Users,o=BAES)),base=ou=Notifications,o=BAES"
+                    ]
+                }
+            ]
+        }
+    ]
+}
