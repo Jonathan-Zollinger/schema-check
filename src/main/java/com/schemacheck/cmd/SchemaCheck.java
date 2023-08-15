@@ -64,6 +64,8 @@ public class SchemaCheck implements Runnable {
     public void run() {
         getEnv();
         initiateLdapConnection();
+        try (PrintWriter logWriter = new PrintWriter(Files.newOutputStream(
+                Paths.get(directory.toString() + File.separatorChar + directory.getFileName().toString() + ".log")))) {
         for (Path testPath : getFilePaths()) {
             IdmUnitTest idmUnitTest = getTest(testPath);
             try (PrintWriter logWriter = new PrintWriter(Files.newOutputStream(testPath))) {
@@ -138,6 +140,7 @@ public class SchemaCheck implements Runnable {
         } catch (NamingException e) {
             throw new RuntimeException(e);
         }
+        ldapUtils = new LdapUtils(context);
     }
 
     List<Path> getFilePaths() {

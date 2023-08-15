@@ -1,68 +1,26 @@
 package com.schemacheck.util;
 
-import com.schemacheck.model.Connector;
-import com.schemacheck.model.ConnectorAttribute;
-import com.schemacheck.model.IdmUnitTest;
+import com.schemacheck.model.Operation;
+import com.schemacheck.model.OperationData;
 
 import javax.naming.Binding;
 import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
-import javax.naming.directory.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import javax.naming.directory.Attribute;
+import javax.naming.directory.Attributes;
+import javax.naming.directory.DirContext;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class LdapUtils {
 
-    static DirContext context;
+    private final DirContext context;
 
     public LdapUtils(DirContext context) {
-        LdapUtils.context = context;
+        this.context = context;
     }
 
-
-    /**
-     * Returns the values for any basic attributes from attributesList whose name is case insensitively matched against basicAttributeNames.
-     *
-     * @param objectClass         names of object classes whose attributes are to be queried.
-     * @param basicAttributeNames The names of the attributes whose basic attribute names are to be returned.
-     * @return The names of the basic attributes assigned the provided basicAttributeNames in the given Attributes list.
-     * @throws RuntimeException If a Naming Exception is encountered when querying the schema definition for any
-     *                          attributes.
-     */
-    public static BasicAttribute[] getBasicAttributes(Boolean recurse, Set<String> objectClass, String... basicAttributeNames) throws RuntimeException {
-        List<Attributes> attributesList = getObjectClassAttributes(recurse, objectClass.toArray(new String[0]));
-        Set<BasicAttribute> basicAttributes = new HashSet<>();
-        for (Attributes attributes : attributesList) {
-            NamingEnumeration<? extends Attribute> allResults = attributes.getAll();
-            while (allResults.hasMoreElements()) {
-                Attribute nextElement = allResults.nextElement();
-                if (Arrays.stream(basicAttributeNames).anyMatch(nextElement.getID()::equalsIgnoreCase)) {
-                    NamingEnumeration<?> attributeValues;
-                    try {
-                        attributeValues = nextElement.getAll();
-                    } catch (NamingException e) {
-                        throw new RuntimeException(String.format("Failed to query all elements in the \"%s\" element.", nextElement.getID()), e);
-                    }
-                    while (attributeValues.hasMoreElements()) {
-                        Object thisElement = attributeValues.nextElement();
-                        BasicAttribute basicAttribute = thisElement instanceof BasicAttribute ? ((BasicAttribute) thisElement) : null;
-                        if (null == basicAttribute) { throw new RuntimeException ("unexpected data type");}
-                        basicAttributes.add((basicAttribute));
-                    }
-                }
-            }
-        }
-        return basicAttributes.toArray(new BasicAttribute[0]);
-    }
-
-    public static Set<String> getBasicAttributeValueNames(Boolean recurse, Set<String> objectClass, String... basicAttributeNames) throws RuntimeException {
+    public Set<String> getBasicAttributeValueNames(Boolean recurse, Set<String> objectClass, String... basicAttributeNames) {
         Set<String> basicAttributeValues = new HashSet<>();
         for (Attributes attributes : getObjectClassAttributes(recurse, objectClass.toArray(new String[0]))) {
             NamingEnumeration<? extends Attribute> allResults = attributes.getAll();
@@ -92,26 +50,30 @@ public class LdapUtils {
      * @return The attributes assigned to both an object class and its super classes.
      * @throws RuntimeException If a Naming Exception is encountered when querying the object class definition(s).
      */
-    public static List<Attributes> getObjectClassAttributes(boolean recurse, String... objectClasses) throws RuntimeException {
+    public List<Attributes> getObjectClassAttributes(boolean recurse, String... objectClasses) {
         List<Attributes> searchResults = new ArrayList<>();
         for (String objectClass : objectClasses) {
-            Attributes Attributes;
+            Attributes attributes = null;
             try {
-                Attributes = ((DirContext) context.getSchema("").lookup("ClassDefinition/" + objectClass)).getAttributes("");
-                searchResults.add(Attributes);
+                attributes = ((DirContext) context.getSchema("").lookup("ClassDefinition/" + objectClass)).getAttributes("");
+                searchResults.add(attributes);
             } catch (NamingException e) {
                 try {
-                    objectClass = getXndsMappedObjectClassName(objectClass).iterator().next();
-                    Attributes = ((DirContext) context.getSchema("").lookup("ClassDefinition/" + objectClass)).getAttributes("");
-                    searchResults.add(Attributes);
+                    Iterator<String> objectIterator = getXndsMappedObjectClassName(objectClass).iterator();
+                    if (objectIterator.hasNext()) {
+                        objectClass = objectIterator.next();
+                        attributes = ((DirContext) context.getSchema("").lookup("ClassDefinition/" + objectClass)).getAttributes("");
+                        searchResults.add(attributes);
+                    }
+
                 } catch (NamingException ex) {
                     throw new RuntimeException(String.format("Failed to get Class definition for the \"%s\" object class.\n\t", objectClass), e);
                 }
             }
             if (recurse) {
-                if (null != Attributes.get("sup")) {
+                if (null != attributes && null != attributes.get("sup")) {
                     try {
-                        searchResults.addAll(getObjectClassAttributes(true, (String) Attributes.get("sup").get()));
+                        searchResults.addAll(getObjectClassAttributes(true, (String) attributes.get("sup").get()));
                     } catch (NamingException e) {
                         throw new RuntimeException(String.format("Failed to get the object class definition for the \"%s\" object " +
                                 "class.\n\t", objectClass), e);
@@ -130,7 +92,7 @@ public class LdapUtils {
      * @throws RuntimeException if Naming exceptions are encountered when querying the ldap service.
      * @see <a href="https://docs.oracle.com/javase/jndi/tutorial/basics/directory/attrnames.html>JNDI Tutorial</a>
      */
-    static Set<String> getXndsMappedObjectClassName(String... xndsNames) throws RuntimeException {
+    Set<String> getXndsMappedObjectClassName(String... xndsNames) {
         Set<String> xndsNamesSet = Arrays.stream(xndsNames).map(String::toLowerCase).collect(Collectors.toSet());
         Set<String> mappedObjectClass = new HashSet<>();
         NamingEnumeration<Binding> allTheObjectClasses;
@@ -154,12 +116,15 @@ public class LdapUtils {
         return mappedObjectClass;
     }
 
-    public static Set<String> getMissingRequiredAttributeNames(Connector connector) throws RuntimeException {
-        Set<String> requiredAttributes;
-        Set<String> objectClasses = Arrays.stream(IdmTestUtils.getAttributes(connector, "ObjectClass")).map(ConnectorAttribute::getName).collect(Collectors.toSet());
-        requiredAttributes = getBasicAttributeValueNames(true, objectClasses , "must");
-        return requiredAttributes.stream()
-                .filter(req -> connector.getAttributes().stream().map(ConnectorAttribute::getName).noneMatch(req::equalsIgnoreCase))
+    public Set<String> getMissingRequiredAttributeNames(Operation operation) {
+        Set<String> objectClasses = new HashSet<>(Arrays.asList(IdmTestUtils.getAttributes(operation, "ObjectClass")));
+        return getBasicAttributeValueNames(true, objectClasses, "must").stream()
+                .filter(attributeName -> operation
+                        .getData()
+                        .stream()
+                        .map(OperationData::getAttribute)
+                        .collect(Collectors.toSet())
+                        .contains(attributeName))
                 .collect(Collectors.toSet());
     }
 
