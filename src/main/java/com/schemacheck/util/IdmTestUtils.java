@@ -33,9 +33,8 @@ import com.schemacheck.model.IdmUnitTest;
 import com.schemacheck.model.Operation;
 import com.schemacheck.model.OperationData;
 
-import java.util.Collections;
+import java.util.Collection;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -46,6 +45,15 @@ public class IdmTestUtils {
                 .filter(connectorAttribute -> connectorAttribute.getName().equalsIgnoreCase(attributeName))
                 .toArray(ConnectorAttribute[]::new);
     }
+
+    public static String[] getAttributes(Operation operation, String attributeName) {
+        return operation.getData().stream()
+                .filter(operationData -> operationData.getAttribute().equalsIgnoreCase(attributeName))
+                .map(OperationData::getValue)
+                .flatMap(Collection::stream)
+                .toArray(String[]::new);
+    }
+
 
 
     public static List<String> getConnectorsNames(IdmUnitTest idmUnitTest) {
