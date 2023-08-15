@@ -68,18 +68,13 @@ public class SchemaCheck implements Runnable {
                 Paths.get(directory.toString() + File.separatorChar + directory.getFileName().toString() + ".log")))) {
         for (Path testPath : getFilePaths()) {
             IdmUnitTest idmUnitTest = getTest(testPath);
-            try (PrintWriter logWriter = new PrintWriter(Files.newOutputStream(testPath))) {
-                logWriter.println("["  + idmUnitTest.getName() + "] --");
-                idmUnitTest.getConnectors().forEach(connector -> {
-                    Set<String> missingAttributes = LdapUtils.getMissingRequiredAttributeNames(connector);
-                    if (null != missingAttributes) {
 
                         logWriter.println("\t" + String.join("\t" + System.lineSeparator(), missingAttributes));
                     }
                 });
-            } catch (IOException e) {
-                throw new RuntimeException(e);
             }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
 
