@@ -11,12 +11,10 @@ import javax.naming.Context;
 import javax.naming.NamingException;
 import javax.naming.directory.DirContext;
 import javax.naming.ldap.InitialLdapContext;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -62,7 +60,6 @@ public class SchemaCheck implements Runnable {
 
     @Override
     public void run() {
-        getEnv();
         initiateLdapConnection();
         try (PrintWriter logWriter = new PrintWriter(Files.newOutputStream(
                 Paths.get(directory.toString() + File.separatorChar + directory.getFileName().toString() + ".log")))) {
@@ -97,7 +94,7 @@ public class SchemaCheck implements Runnable {
         try (InputStream testStream = Files.newInputStream(testPath)) {
             idmUnitTest = JsonUtils.getMapper().readValue(testStream, IdmUnitTest.class);
         } catch (IOException e) {
-            throw new RuntimeException("Failed to read from" + testPath, e);
+            throw new RuntimeException("Failed to read from " + testPath, e);
         }
         return idmUnitTest;
     }
