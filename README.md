@@ -46,6 +46,10 @@ Building requires `maven 3.9.4` and `java 18`.
 1. Download this repo - you can later delete this if you want.
 2. Navigate to the repo's base directory (The same directory where you find the `pom.xml` file)
 3. call `mvn clean install -DskipTests` and watch the magic. 
+<ul><ul><details><summary></summary>
+<img src="docs/mvn-build.gif" alt="mvn clean install -DskipTests">
+</details></ul></ul>
+
 4. A new directory `target` will be produced where a number of other directories will be found. Among these is the `schema-check` directory.
 
 #### Add schema-check to your PATH on Windows
