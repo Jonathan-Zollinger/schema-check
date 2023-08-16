@@ -125,6 +125,7 @@ public class SchemaCheck implements Runnable {
     void initiateLdapConnection() {
         getEnv();
         Hashtable<String, String> env = new Hashtable<>();
+        System.setProperty("com.sun.jndi.ldap.object.disableEndpointIdentification", "true");
         env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
         env.put("com.sun.jndi.ldap.connect.pool", "true");  //CP CHANGE TO DISABLE LDAP CONNECTION POOL
         env.put("com.sun.jndi.ldap.connect.pool.protocol", "plain ssl");
