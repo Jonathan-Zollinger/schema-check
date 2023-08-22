@@ -15,6 +15,7 @@ class SchemaCheckTest {
     void setUp() {
         System.setProperty("com.sun.jndi.ldap.object.disableEndpointIdentification","true");
         schemaCheck = new SchemaCheck();
+        schemaCheck.directory = Paths.get(testResourcesDir + File.separatorChar + "original-test-data");
     }
 
     @AfterEach
@@ -22,13 +23,19 @@ class SchemaCheckTest {
         System.setProperty("com.sun.jndi.ldap.object.disableEndpointIdentification","false");
     }
 
-    void readEnv() {
-        schemaCheck.envFile = Paths.get(testResourcesDir +File.separatorChar + ".env");
+    void readEnv(String fileName) {
+        schemaCheck.envFile = Paths.get(testResourcesDir +File.separatorChar + fileName);
     }
     @Test
     void tireKick() {
-        readEnv();
-        schemaCheck.directory = Paths.get(testResourcesDir + File.separatorChar + "original-test-data");
+        readEnv(".env");
+        schemaCheck.run();
+    }
+
+    @Test
+    void trustAllCerts() {
+        readEnv("no-trust-store");
+        schemaCheck.trustAllCerts = true;
         schemaCheck.run();
     }
 }
