@@ -36,14 +36,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-
-/**
- * Implements an IdMUnit connector for Delimited Text File drivers
- *
- * @author Brent Kynaston, Software Engineer, TriVir LLC
- * @version %I%, %G%
- * @see org.idmunit.connector.Connection
- */
 public class DTF extends AbstractConnector {
     private static final String INPUT_FILE = "input-file";
     private static final String OUTPUT_FILE = "output-file";

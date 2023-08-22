@@ -27,16 +27,6 @@
  */
 package com.schemacheck.util.idmunit;
 
-/**
- * Exception class for communicating exceptional behavior to the framework user
- *
- * @author Brent Kynaston, Software Engineer, TriVir LLC
- * @version %I%, %G%
- * @see ConnectionConfigData
- * @see org.idmunit.connector.Connection
- * @see Alert
- * @see DdRowBehaviour
- */
 public class IdMUnitException extends Exception {
     static final long serialVersionUID = 1;
 
