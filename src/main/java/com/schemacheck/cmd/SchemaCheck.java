@@ -1,11 +1,11 @@
 package com.schemacheck.cmd;
 
 import com.schemacheck.model.IdmUnitTest;
-import com.schemacheck.util.CheaterSocketFactory;
 import com.schemacheck.util.JsonUtils;
 import com.schemacheck.util.LdapUtils;
 import com.schemacheck.util.PicoCliValidation;
 import com.schemacheck.util.idmunit.IdMUnitException;
+import org.fusesource.jansi.AnsiConsole;
 import picocli.CommandLine;
 
 import javax.naming.Context;
@@ -33,6 +33,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static org.fusesource.jansi.Ansi.Color.YELLOW;
+import static org.fusesource.jansi.Ansi.ansi;
+
 @CommandLine.Command(name = "schema-check",
         description = "validates an IdmUnit json test schema against a directory service.",
         mixinStandardHelpOptions = true,
@@ -41,6 +44,7 @@ import java.util.stream.Stream;
 public class SchemaCheck implements Runnable {
 
     String IP, ADMIN_DN, ADMIN_SECRET, TRUST_STORE, TRUST_STORE_PASSWORD, SSL_PORT;
+
     @CommandLine.Spec
     CommandLine.Model.CommandSpec spec;
 
@@ -51,7 +55,7 @@ public class SchemaCheck implements Runnable {
             names = "--dir",
             description = "directory of idmTests to be validated."
     )
-    Path directory = Paths.get(".");
+    Path directory = Paths.get(".").toAbsolutePath().getParent();
 
     @CommandLine.Option(
             names = "--env",
@@ -68,12 +72,18 @@ public class SchemaCheck implements Runnable {
 
     public static void main(String[] args) {
         CommandLine cmd = new CommandLine(new SchemaCheck());
+        AnsiConsole.systemInstall();
         int exitCode = cmd.execute(args);
+        AnsiConsole.systemUninstall();
         System.exit(exitCode);
     }
 
     @Override
     public void run() {
+        if(getFilePaths().isEmpty()){
+            throw new CommandLine.ParameterException(spec.commandLine(),
+                    String.format("No tests found in the %s directory", ansi().fg(YELLOW).a(directory.toAbsolutePath()).reset()));
+        }
         PicoCliValidation.fileExistsAndIsReadable(spec, envFile);
         initiateLdapConnection();
         try (PrintWriter logWriter = new PrintWriter(Files.newOutputStream(
@@ -346,10 +356,7 @@ public class SchemaCheck implements Runnable {
                 if (factory == null) {
                     try {
                         factory = new CustomSocketFactory();
-                    } catch (KeyManagementException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    } catch (NoSuchAlgorithmException e) {
+                    } catch (KeyManagementException | NoSuchAlgorithmException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
