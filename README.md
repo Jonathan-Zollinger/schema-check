@@ -2,7 +2,7 @@
 Schema-Check is a cli tool which reports what parts of an IDM unit test are invalid relative to a directory schema. 
 
 ## How to use
-This requires [idmunit json tests](https://github.com/Jonathan-Zollinger/idmunit-test-converter), an [eDirectory server](https://github.com/Jonathan-Zollinger/eDirectory-Compose) and an .env file.
+This requires ldif schema files, an [eDirectory server](https://github.com/Jonathan-Zollinger/eDirectory-Compose) and an .env file.
 
 ### .env file
 The env file provides what's needed to provide admin access to the eDir server. Never publish your .env file, nor save it somewhere you wouldn't save your bank information.
